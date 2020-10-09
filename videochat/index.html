@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="app">
+
+<head>
+    <meta charset="utf-8">
+    <title>Videochat</title>
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/bootstrap-social.css" rel="stylesheet">
+    <link href="css/mystyles.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="img/logo.jpg" height=30 width=41></a>
+            </div>
+
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#!"><span class="glyphicon glyphicon-home"
+                         aria-hidden="true"></span> Home</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-list-alt" aria-hidden="true"></i> Menú <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#!">Doctor</a></li>
+                            <li><a href="routingEnfermera.php">Enfermera</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#!about"><span class="glyphicon glyphicon-info-sign"
+                         aria-hidden="true"></span> About</a></li>
+                    <li><a href="#!contact"><i class="fa fa-envelope"></i> Contact</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a data-toggle="dropdown" data-target="#loginModal">
+                            <span class="glyphicon glyphicon-log-in"></span> Login</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#!medico">Médico</a></li>
+                            <li><a href="#!Enfermera">Enfermera</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+
+            </div>
+
+
+        </div>
+
+    </nav>
+    <div id="hola">
+        <label>Your ID:</label>
+        <br/>
+        <textarea id="yourId"></textarea>
+        <br/>
+        <label>Other ID:</label>
+        <br/>
+        <textarea id="otherId"></textarea>
+        <button id="connect">connect</button>
+        <br/>
+
+        <label>Enter Message:</label>
+        <br/>
+        <textarea id="yourMessage"></textarea>
+        <button id="send">send</button>
+        <pre id="messages"></pre>
+
+        <!--<a type="button" class="btn btn-warning btn-block"
+    data-toggle="tooltip" title="O llamanos 449 155 51 77"
+    data-placement="bottom" href="http://127.0.0.1:64262/routing.html#!/">
+    Volver a home</a>-->
+        <button id="volver">Volver a home</button>
+        <script src="bundle.js" charset="utf-8"></script>
+    </div>
+
+</body>
+
+</html>
